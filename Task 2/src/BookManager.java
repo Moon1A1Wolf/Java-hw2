@@ -4,7 +4,6 @@ import java.util.Scanner;
 public class BookManager {
     private ArrayList<Book> books = new ArrayList<>();
 
-    // Додати книгу
     public void addBook(Scanner scanner) {
         System.out.print("Введіть назву книги: ");
         String title = scanner.nextLine();
@@ -46,7 +45,6 @@ public class BookManager {
         System.out.println("Книга успішно додана!\n");
     }
 
-    // Відобразити всі книги
     public void displayBooks() {
         if (books.isEmpty()) {
             System.out.println("Список книг порожній.");
