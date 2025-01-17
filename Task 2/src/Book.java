@@ -8,7 +8,6 @@ public class Book {
     private String genre;
     private int pages;
 
-    // Конструктор
     public Book(String title, String author, int year, String publisher, String genre, int pages) {
         this.title = title;
         this.author = author;
@@ -18,7 +17,6 @@ public class Book {
         this.pages = pages;
     }
 
-    // Геттери і сеттери
     public String getTitle() { return title; }
     public void setTitle(String title) { this.title = title; }
 
@@ -42,7 +40,6 @@ public class Book {
         return "Назва: " + title + ", Автор: " + author + ", Рік: " + year + ", Видавництво: " + publisher + ", Жанр: " + genre + ", Сторінки: " + pages;
     }
 
-    // Перевірка правильності даних
     public static boolean isValidString(String input) {
         return input.matches("[іїа-яА-Яa-zA-Z\\s]+");
     }
